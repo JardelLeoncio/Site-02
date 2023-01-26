@@ -77,8 +77,8 @@ header ul li a
 header ul li a:hover,
 header ul li a.active
 {
-    background: rgb(87, 114, 112);
-    box-shadow: 0 5px 10px;
+    background: rgb(83, 87, 86);
+    box-shadow: 0 1px 5px;
 }
 .container{
     position: relative;
@@ -160,13 +160,13 @@ height: 100%;
 }
 .container .card a
 {
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 12em;
+    left: 7em;
     text-decoration: none;
     font-weight: 500;
     color: rgba(0, 238, 255, 0.767);
     padding: 8px 15px;
     border-radius: 25px;
-    background: rgb(87, 114, 112);
+    background: rgb(83, 87, 86);
 }
