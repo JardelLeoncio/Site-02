@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="Tela_Principal/style.css">
 </head>
 <body>
     <section>
@@ -19,12 +20,20 @@
                     <li><a href="#">Sign Out</a></li>
                 </ul>
                 <div class="mobile-menu-icon">
-                    <button><img class="icon" src="" alt=""></button>
+                    <button onclick="menuShow()"><img class="icon" src="Tela_Principal/imagens/menu-white.svg" alt=""></button>
+                </div>
+                <div class="mobile-menu">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link" >Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" >Profile</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" >Team</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" >Sign Out</a></li>
+                    </ul>
                 </div>
             </header>
             <div class="card">
                 <div class="imgBx">
-                    <img src="imagens/img_projeto.jpg">                                    
+                    <img src="Tela_Principal/imagens/img_projeto.jpg">                                    
                 </div>
                 <div class="contentBx">
                     <div class="content">
@@ -36,7 +45,7 @@
             </div>
             <div class="card">
                 <div class="imgBx">
-                    <img src="imagens/img_dados.jpg">                                    
+                    <img src="Tela_Principal/imagens/img_dados.jpg">                                    
                 </div>
                 <div class="contentBx">
                     <div class="content">
@@ -48,7 +57,7 @@
             </div>
             <div class="card">
                 <div class="imgBx">
-                    <img src="imagens/img_grafico.jpg">                                    
+                    <img src="Tela_Principal/imagens/img_grafico.jpg">                                    
                 </div>
                 <div class="contentBx">
                     <div class="content">
@@ -60,6 +69,6 @@
             </div>
         </div>
     </section>
-
 </body>
+<script src="Tela_Principal/script.js"></script>
 </html>
