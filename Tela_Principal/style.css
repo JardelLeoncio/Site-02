@@ -15,7 +15,7 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .container {
@@ -189,10 +189,6 @@ header ul li a.active {
 }
 @media screen and (max-width: 850px)
 {
-    header
-    {
-        padding: 1.5rem 4rem;
-    }
     header ul
     {
         display: none;
@@ -203,6 +199,10 @@ header ul li a.active {
     }
     .mobile-menu-icon button
     {
+        overflow: hidden;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.50rem;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -227,6 +227,18 @@ header ul li a.active {
     {
         display: none;
     }
-
-
+    header .logo {
+        position: absolute;
+        left: 0.75rem;
+        color: rgba(0, 238, 255, 0.767);
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .mobile-menu.open 
+    {
+        position: relative;
+        left: 3rem;
+        top: 1.50rem;
+    }
 }
