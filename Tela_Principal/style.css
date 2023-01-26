@@ -248,12 +248,14 @@ header ul li a.active {
     }
     .container .card .contentBx .content p
     {
+        text-align: center;
         font-size: 0.8em;
         line-height: 1.4em;
         font-weight: 300;
     }
     .container .card .contentBx .content h3 
     {
+        text-align: center;
         font-size: 1em;
         text-transform: uppercase;
         letter-spacing: 1px;
