@@ -193,6 +193,7 @@ header ul li a.active {
     {
         position: absolute;
         z-index: 1;
+        padding: 15px 50px;
     }
     header ul
     {
@@ -206,7 +207,7 @@ header ul li a.active {
     {
         position: absolute;
         right: 1rem;
-        top: 1.50rem;
+        top: 1.30rem;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -228,19 +229,13 @@ header ul li a.active {
         display: block;
     }
     header .logo {
-        position: relative;
-        left: 0.75rem;
         color: rgba(0, 238, 255, 0.767);
         font-weight: 700;
         text-decoration: none;
         font-size: 1.5rem;
     }
-    .mobile-menu.open 
+    .container .card 
     {
-        left: 3rem;
-        top: 1.50rem;
-    }
-    .container .card {
         position: relative;
         width: 230px;
         height: 230px;
@@ -248,4 +243,28 @@ header ul li a.active {
         border-radius: 0.5rem;
         overflow: hidden;
     }
+    .container .card .contentBx .content p
+    {
+        font-size: 0.8em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .container .card .contentBx .content h3 
+    {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .container .card a {
+        position: relative;
+        top: 1rem;
+        left: 2.3rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: rgba(0, 238, 255, 0.767);
+        padding: 8px 15px;
+        border-radius: 25px;
+        background: rgb(83, 87, 86);
+    }
+    
 }
