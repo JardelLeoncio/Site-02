@@ -94,6 +94,7 @@ header ul li a.active {
     width: 320px;
     height: 320px;
     margin: 15px;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 
@@ -169,9 +170,9 @@ header ul li a.active {
 }
 
 .container .card a {
-    position: absolute;
-    top: 12em;
-    left: 7em;
+    position: relative;
+    top: 4rem;
+    left: 5rem;
     text-decoration: none;
     font-weight: 500;
     color: rgba(0, 238, 255, 0.767);
