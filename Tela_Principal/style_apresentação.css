@@ -180,33 +180,32 @@ header ul li a.active {
     border-radius: 25px;
     background: rgb(83, 87, 86);
 }
-.mobile-menu-icon
-{
+
+.mobile-menu-icon {
     display: none;
 }
-.mobile-menu
-{
+
+.mobile-menu {
     display: none;
 }
-@media screen and (max-width: 850px)
-{
-    header
-    {
+
+@media screen and (max-width: 850px) {
+    header {
         position: absolute;
         background: rgba(255, 255, 255, 0.8);
         z-index: 1;
         padding: 15px 50px;
     }
-    header ul
-    {
+
+    header ul {
         display: none;
     }
-    .mobile-menu-icon
-    {
+
+    .mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button
-    {
+
+    .mobile-menu-icon button {
         position: absolute;
         right: 1rem;
         top: 1.30rem;
@@ -214,30 +213,31 @@ header ul li a.active {
         border: none;
         cursor: pointer;
     }
-    .mobile-menu ul
-    {
+
+    .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-    .mobile-menu .nav-item
-    {
+
+    .mobile-menu .nav-item {
         display: block;
         padding-top: 1.3rem;
     }
-    .open
-    {
+
+    .open {
         display: block;
     }
+
     header .logo {
         color: rgba(0, 238, 255, 0.767);
         font-weight: 700;
         text-decoration: none;
         font-size: 1.5rem;
     }
-    .container .card 
-    {
+
+    .container .card {
         position: relative;
         width: 230px;
         height: 230px;
@@ -246,22 +246,22 @@ header ul li a.active {
         overflow: hidden;
         z-index: 0;
     }
-    .container .card .contentBx .content p
-    {
+
+    .container .card .contentBx .content p {
         text-align: center;
         font-size: 0.8em;
         line-height: 1.4em;
         font-weight: 300;
     }
-    .container .card .contentBx .content h3 
-    {
+
+    .container .card .contentBx .content h3 {
         text-align: center;
         font-size: 1em;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
-    .container .card a 
-    {
+
+    .container .card a {
         position: relative;
         top: 1rem;
         left: 2.3rem;
@@ -272,15 +272,15 @@ header ul li a.active {
         border-radius: 25px;
         background: rgb(83, 87, 86);
     }
-    header ul li a:hover 
-    {
-    background: 0;
-    box-shadow: 0 1px 1px;
+
+    header ul li a:hover {
+        background: 0;
+        box-shadow: 0 1px 1px;
     }
+
     header ul li a,
-    header .logo
-    {
+    header .logo {
         color: dodgerblue;
     }
-    
+
 }
