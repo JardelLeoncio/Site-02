@@ -199,7 +199,7 @@ article img{
         background: #008cff;
         box-shadow: 0px 3px 6px;
         border-radius: 25px;
-        padding: 1px 88px;
+        width: 95%;
         z-index: 1;
     }
 
@@ -228,15 +228,13 @@ article img{
         padding: 0;
     }
     .icon {
-        position: absolute;
-        left: 21rem;
-        top: 1.4rem;
+        position: relative;
+        left: 1rem;
+        top: 0.5rem;
     }
 
     .logo {
         position: relative;
-        left: 0.1rem;
-        top: 0.1rem;
     }
 
     .nav-bar {
