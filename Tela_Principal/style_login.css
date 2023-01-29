@@ -109,12 +109,18 @@ main aside p {
     color: #fff;
 }
 
-main aside p a {
+main aside p button {
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
     color: #ff008a;
     text-decoration: none;
 }
-main aside p a:hover{
-    color: #d80274;;
+
+main aside p button:hover {
+    color: #d80274;
+    ;
 }
 
 main form .w50 {
@@ -146,10 +152,12 @@ main form .input-group input {
     color: #616161;
     transition: all 0.4s ease;
 }
-main form .input-group input:focus{
+
+main form .input-group input:focus {
     border-color: #ff008869;
 }
-main form .input-group button{
+
+main form .input-group button {
     width: 100%;
     height: 3rem;
     background: #b90063;
@@ -162,10 +170,12 @@ main form .input-group button{
     font-size: 16px;
     font-weight: 600;
 }
-main form .input-group button:hover{
+
+main form .input-group button:hover {
     background: #9b0053;
 }
-article img{
+
+article img {
     margin-top: 6rem;
 }
 
@@ -176,13 +186,26 @@ article img{
 .mobile-menu {
     display: none;
 }
+
+.cadastro{
+    display: none;
+}
+.troca-cadastro{
+    display: block;
+}
+.troca-login{
+    display: none;
+}
+
 @media screen and (max-width: 1350px) {
     article img {
         display: none;
     }
-    main{
+
+    main {
         justify-content: center;
     }
+
     main aside h2 {
         font-size: 4rem;
     }
@@ -223,13 +246,15 @@ article img{
         font-size: 2.3rem;
     }
 
-    main form .input-group ::placeholder{
+    main form .input-group ::placeholder {
         color: #008cff;
     }
-    .w50{
+
+    .w50 {
         width: 100%;
         padding: 0;
     }
+
     .icon {
         position: relative;
         left: 1rem;
