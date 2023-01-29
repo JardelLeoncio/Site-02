@@ -56,7 +56,7 @@ body {
     border: 1px solid #00f7ff;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background: #00f7ff67;
 }
 
@@ -81,45 +81,90 @@ body {
 main {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+main form {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 100%%;
+    border-radius: 20px;
+    margin: 20px 0;
 }
 
 main aside {
-    text-align: center;
-    margin-top: 10rem;
-}
-
-main aside span {
-    color: #00f7ff;
-}
-
-main aside p span {
-    color: #ff0055;
+    margin-top: 6rem;
 }
 
 main aside h2 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #fff;
 }
 
 main aside p {
-    text-align: justify;
+    text-align: center;
     font-size: 1.2rem;
     color: #fff;
 }
 
-main aside a {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #fff;
-    color: #3503ba;
-    margin-top: 20px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 700;
+main aside p a {
+    color: #ff008a;
     text-decoration: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
+main form .w50 {
+    float: left;
+    padding-right: 2rem;
+}
+
+main form .input-group {
+    margin-bottom: 15px;
+}
+
+main form .input-group label {
+    color: #3d3d3d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+main form .input-group input {
+    width: 90%;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 1rem;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+main form .input-group input:focus{
+    border-color: #ff008869;
+}
+main form .input-group button{
+    width: 100%;
+    height: 3rem;
+    background: #b90063;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+main form .input-group button:hover{
+    background: #9b0053;
+}
+article img{
+    margin-top: 6rem;
+}
+
 .mobile-menu-icon {
     display: none;
 }
@@ -127,42 +172,33 @@ main aside a {
 .mobile-menu {
     display: none;
 }
-
-article img{
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate{
-    0%,100%{
-        transform: translateY(50px);
-    }
-    50%{
-        transform: translateY(100px);
-    }
-}
-
 @media screen and (max-width: 1350px) {
-    img{
+    img {
         margin-top: 7rem;
         max-width: 600px;
     }
-    main aside{
+
+    main aside {
         margin-top: 15rem;
     }
+
     main aside h2 {
         font-size: 4rem;
     }
-    main aside p{
+
+    main aside p {
         max-width: 550px;
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 850px){
-    img{
+
+@media screen and (max-width: 850px) {
+    img {
         margin-top: 0.1rem;
         max-width: 370px;
     }
-    header{
+
+    header {
         position: absolute;
         background: #008cff;
         box-shadow: 0px 3px 6px;
@@ -170,88 +206,108 @@ article img{
         padding: 1px 88px;
         z-index: 1;
     }
-    main{
+
+    main {
         margin-top: 7rem;
         z-index: 0;
         display: block;
         max-width: 700px;
     }
-    main aside{
+
+    main aside {
         margin-top: 2rem;
     }
-    main aside p{
+
+    main aside p {
         max-width: 550px;
         font-size: 1rem;
     }
+
     main aside h2 {
         font-size: 2.3rem;
     }
-    .icon{
+
+    .icon {
         position: absolute;
         left: 21rem;
         top: 1.4rem;
     }
-    .logo{
+
+    .logo {
         position: relative;
         left: 0.1rem;
         top: 0.1rem;
     }
-    .nav-bar{
+
+    .nav-bar {
         padding: 0.75rem 4rem;
     }
-    .nav-item{
+
+    .nav-item {
         display: none;
     }
-    .login-button{
+
+    .login-button {
         display: none;
-        
+
     }
-    .mobile-menu-icon{
+
+    .mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button{
+
+    .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
 
     }
-    .mobile-menu ul{
+
+    .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-    .mobile-menu .nav-item{
+
+    .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .login-button{
+
+    .mobile-menu .login-button {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button{
+
+    .mobile-menu .login-button button {
         width: 100%;
     }
-    .open{
+
+    .open {
         display: block;
     }
+
     .login-button button {
         background-color: rgba(0, 68, 255, 0.788);
     }
-    
+
     .login-button button:hover {
         background-color: rgba(1, 53, 196, 0.788);
     }
 
-    article img{
+    article img {
         animation: animate 5s linear infinite;
     }
-    
-    @keyframes animate{
-        0%,100%{
+
+    @keyframes animate {
+
+        0%,
+        100% {
             transform: translateY(0px);
         }
-        50%{
+
+        50% {
             transform: translateY(50px);
         }
     }
