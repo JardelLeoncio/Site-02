@@ -87,8 +87,8 @@ main {
 main form {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
+    box-shadow: 0 2px 5px;
     padding: 30px 40px;
-    width: 100%%;
     border-radius: 20px;
     margin: 20px 0;
 }
@@ -113,6 +113,9 @@ main aside p a {
     color: #ff008a;
     text-decoration: none;
 }
+main aside p a:hover{
+    color: #d80274;;
+}
 
 main form .w50 {
     float: left;
@@ -135,6 +138,7 @@ main form .input-group input {
     height: 1rem;
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
+    box-shadow: 0 2px 5px;
     outline: none;
     border: 2px solid transparent;
     padding: 15px;
