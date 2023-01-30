@@ -21,7 +21,7 @@ function closeShow()
         document.querySelector('.icon').src = "Tela_Principal/imagens/menu-white.svg";
     }
 }
-function cadastroShow()
+function trocaShow()
 {
     let trocacadastro = document.querySelector('.cadastro');
     let trocalogin = document.querySelector('.login');
@@ -34,21 +34,5 @@ function cadastroShow()
     {
         trocacadastro.classList.add('troca-cadastro');
         trocalogin.classList.add('troca-login');
-    }
-}
-function loginShow()
-{
-    let trocalogin = document.querySelector('.login');
-    let trocacadastro = document.querySelector('.cadastro');
-    if(trocalogin.classList.contains('troca-login'))
-    {
-        trocalogin.classList.remove('troca-login');
-        trocacadastro.classList.remove('troca-cadastro');
-        
-    }
-    else
-    {
-        trocalogin.classList.add('troca-login');
-        trocacadastro.classList.add('troca-cadastro');
     }
 }
