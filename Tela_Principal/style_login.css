@@ -7,7 +7,10 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #3503ba, #06054b);
+    background: url(imagens/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Poppins;
     background-attachment: fixed;
     max-width: 1700px;
@@ -94,7 +97,11 @@ main form {
 }
 
 main aside {
-    margin-top: 6rem;
+    margin-top: 8rem;
+}
+
+main .login {
+    margin-left: 15rem;
 }
 
 main aside h2 {
@@ -187,13 +194,15 @@ article img {
     display: none;
 }
 
-.cadastro{
+.cadastro {
     display: none;
 }
-.troca-cadastro{
+
+.troca-cadastro {
     display: block;
 }
-.troca-login{
+
+.troca-login {
     display: none;
 }
 
