@@ -228,7 +228,8 @@ article img {
 @media screen and (max-width: 850px) {
     header {
         position: absolute;
-        background: #008cff;
+        background: rgba(0, 160, 253, 0.1);
+        background: blur(1rem);
         box-shadow: 0px 3px 6px;
         border-radius: 25px;
         width: 95%;
@@ -244,6 +245,10 @@ article img {
 
     main aside {
         margin-top: 2rem;
+    }
+
+    main .login{
+        margin: 0;
     }
 
     main aside p {
@@ -321,6 +326,22 @@ article img {
 
     .open {
         display: block;
+        background: #3d3d3d;
+    }
+    .open ul li{
+        background: #3d3d3d;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .open ul li:hover{
+        background: #616161;
+    }
+
+    .open .nav-link{
+        border: none;
+        background: none;
     }
 
     .login-button button {
@@ -330,4 +351,5 @@ article img {
     .login-button button:hover {
         background-color: rgba(1, 53, 196, 0.788);
     }
-}
+    
+}       
