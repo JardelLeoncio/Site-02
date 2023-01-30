@@ -245,9 +245,10 @@ article img {
     main aside {
         margin-top: 2rem;
     }
-
+    
     main .login {
         margin: 0;
+        padding-bottom: 21rem;
     }
 
     main aside p {
