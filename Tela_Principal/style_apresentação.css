@@ -43,7 +43,7 @@ header {
     top: -40px;
     right: 20px;
     left: 20px;
-    padding: 20px 50px;
+    padding: 1rem;
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
@@ -85,7 +85,29 @@ header .nav-bar ul li a.active {
     box-shadow: 0 1px 5px;
 }
 
-.container {
+main{
+    display: flex;
+}
+
+.login-button button {
+    border: none;
+    background-color: dodgerblue;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button:hover {
+    background-color: rgba(30, 143, 255, 0.658);
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.container{
     position: relative;
     display: flex;
     justify-content: center;
@@ -201,12 +223,27 @@ header .nav-bar ul li a.active {
         background: blur(1rem);
         box-shadow: 0px 3px 6px;
         border-radius: 25px;
+        padding: 0;
         margin: 0;
         z-index: 1;
     }
 
+    .nav-bar{
+        padding: 1rem;
+    }
+
     header .nav-bar ul {
         display: none;
+    }
+
+    main{
+        margin-top: 2rem;
+        display: block;
+    }
+
+    .nav-bar .logo{
+        position: relative;
+        left: 8.5rem;
     }
 
     .mobile-menu-icon {
@@ -214,10 +251,11 @@ header .nav-bar ul li a.active {
     }
 
     .mobile-menu-icon button {
+        position: relative;
         background-color: transparent;
         border: none;
         cursor: pointer;
-
+        right: 1rem;
     }
 
     .mobile-menu ul {
@@ -230,6 +268,20 @@ header .nav-bar ul li a.active {
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
+    }
+
+    .login-button {
+        display: none;
+
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
     }
 
     .open {
