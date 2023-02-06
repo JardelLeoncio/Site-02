@@ -1,3 +1,13 @@
+<?php
+include('conexao.php');
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,7 +33,7 @@
                     </ul>
 
                     <div class="login-button">
-                        <button><a href="tela_geral.html">Sair</a></button>
+                        <button><a href="index.php">Sair</a></button>
                     </div>
 
                     <div class="mobile-menu-icon">
@@ -39,7 +49,7 @@
                     </ul>
 
                     <div class="login-button">
-                        <button><a href="index.html">Sair</a></button>
+                        <button><a href="index.php">Sair</a></button>
                     </div>
                 </div>
             </header>
